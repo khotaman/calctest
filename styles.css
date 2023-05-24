@@ -27,7 +27,7 @@ body {
 .calculator {
     width: 400px;
     height: 750px;
-    background-image: url(images/calctest2.png);
+    background-image: url(images/calctest3.png);
     background-size: cover;
     background-position: center;
     padding: 40px 30px;
@@ -78,9 +78,9 @@ form .buttons {
     margin: 4px;
     border: none;
     outline: none;
-    background: #dde1e7;
-    border-radius: 5px;
-    color: #595959;
+    color: transparent;
+    background-position: center;
+    background-size: cover;
 }
 
 .buttons input[type="button"]:focus {
