@@ -5,28 +5,121 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    overflow: hidden;
+    background-color: rgb(7, 30, 59);
 }
 
-.container {
+body {
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    min-width: 326px;
+    min-height: 613px;
 }
 
 .wrapper {
-    background-image: url(images/calctest.png);
-    width: 300px;
-    height: 540px;
-    border: 2px solid;
-    text-shadow: white 0px 0px 2px;
-    font-size: 16px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
+    display: grid;
+    min-width: 326px;
+    min-height: 613px;
+}
 
+.calculator {
+    width: 330px;
+    height: 600px;
+    background-image: url(images/calctest.png);
+    background-size: cover;
+    background-position: center;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288)
+}
+
+form .result {
+    height: 53px;
+    width: 225px;
+    background: blue;
+    border-radius: 5px;
+    position: relative;
+    top: 0px;
+    left: 23px;
+}
+
+form {
+    background: transparent;
+}
+
+.result input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    padding: 0 20px;
+    text-align: right;
+    font-weight: 500;
+    color: #595959;
+    pointer-events: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+form .buttons {
+    margin-top: 151px;
+    text-align: center;
+    padding: 30px 0 0 0;
+    background: transparent;
+}
+
+.buttons input[type="button"] {
+    height: 50px;
+    width: 50px;
+    font-size: 23px;
+    margin: 4px;
+    border: none;
+    outline: none;
+    background: #dde1e7;
+    border-radius: 5px;
+    color: #595959;
+}
+
+.buttons input[type="button"]:focus {
+    color: #3498db;
+    box-shadow: inset -3px -3px 7px #ffffff73, inset 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+.row {
+    background: transparent;
+}
+
+.one {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.two {
+    margin-top: 6px;
+    transform: translate(0, 1px);
+}
+
+.three {
+    margin-top: 6px;
+    transform: translate(0, 2px);
+}
+
+.four {
+    margin-top: 10px;
+    transform: translate(0, 2px);
+}
+
+.v7, .v4, .v1, .v0 {
+    transform: translate(5px, 0);
+}
+
+.v9,.v6, .v3, .div {
+    transform: translate(1px, 0);
+}
+
+.add, .sub, .mul, .eql {
+    transform: translate(-4px, 0);
 }
