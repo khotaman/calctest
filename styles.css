@@ -20,14 +20,14 @@ body {
 
 .wrapper {
     display: grid;
-    min-width: 326px;
+    min-width: 398px;
     min-height: 613px;
 }
 
 .calculator {
     width: 400px;
     height: 750px;
-    background-image: url(images/calctest.png);
+    background-image: url(images/calctest2.png);
     background-size: cover;
     background-position: center;
     padding: 40px 30px;
@@ -58,8 +58,8 @@ form {
     font-size: 30px;
     padding: 0 20px;
     text-align: right;
-    font-weight: 500;
-    color: #595959;
+    font-weight: 1000;
+    color: #fff;
     pointer-events: none;
     font-family: 'Poppins', sans-serif;
 }
@@ -122,4 +122,65 @@ form .buttons {
 
 .add, .sub, .mul, .eql {
     transform: translate(-4px, 0);
+}
+
+
+@media screen  and (max-width: 800px) {
+    body {
+        transform: scale(.9);
+    }
+
+    form .result {
+        height: 56px;
+        width: 270px;
+        background: transparent;
+        border-radius: 5px;
+        position: relative;
+        top: 15px;
+        left: 35px;
+        color: #fff;
+    }
+
+    .row {
+        background: transparent;
+        margin-top: 71px;
+        transform: scale(1.2);
+    }
+    
+    .one {
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .two {
+        margin-top: 23px;
+        transform: translate(0, 1px), scale(1.2);
+    }
+    
+    .three {
+        margin-top: 22px;
+        transform: translate(0, 2px), scale(1.2);
+    }
+    
+    .four {
+        margin-top: 27px;
+        transform: translate(0, 2px), scale(1.2);
+    }
+
+    .v7, .v4, .v1, .v0 {
+        transform: translate(1px, 0);
+    }
+
+    .v8, .v5, .v2, .dot {
+        transform: translate(-2px, 0);
+    }
+    
+    .v9,.v6, .v3, .div {
+        transform: translate(3px, 0);
+    }
+    
+    .add, .sub, .mul, .eql {
+        transform: translate(0.5px, 0);
+    }
 }
