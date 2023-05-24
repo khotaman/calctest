@@ -169,18 +169,74 @@ form .buttons {
     }
 
     .v7, .v4, .v1, .v0 {
-        transform: translate(1px, 0);
+        transform: translate(0.5px, -2px);
     }
 
     .v8, .v5, .v2, .dot {
-        transform: translate(-2px, 0);
+        transform: translate(-2px, -2px);
     }
     
     .v9,.v6, .v3, .div {
-        transform: translate(3px, 0);
+        transform: translate(3px, -2px);
     }
     
     .add, .sub, .mul, .eql {
-        transform: translate(0.5px, 0);
+        transform: translate(0.5px, -2px);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    form .result {
+        height: 56px;
+        width: 270px;
+        background: transparent;
+        border-radius: 5px;
+        position: relative;
+        top: 15px;
+        left: 35px;
+        color: #fff;
+    }
+
+    .row {
+        background: transparent;
+        margin-top: 71px;
+        transform: scale(1.2);
+    }
+    
+    .one {
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .two {
+        margin-top: 23px;
+        transform: translate(0, 1px), scale(1.2);
+    }
+    
+    .three {
+        margin-top: 22px;
+        transform: translate(0, 2px), scale(1.2);
+    }
+    
+    .four {
+        margin-top: 27px;
+        transform: translate(0, 2px), scale(1.2);
+    }
+
+    .v7, .v4, .v1, .v0 {
+        transform: translate(0.5px, -2px);
+    }
+
+    .v8, .v5, .v2, .dot {
+        transform: translate(-2px, -2px);
+    }
+    
+    .v9,.v6, .v3, .div {
+        transform: translate(3px, -2px);
+    }
+    
+    .add, .sub, .mul, .eql {
+        transform: translate(0.5px, -2px);
     }
 }
